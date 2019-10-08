@@ -1,0 +1,132 @@
+body {
+      background:  radial-gradient(#555A5F, #000);
+	    width: 100%;
+      height: 90vh;
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h1, a {
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    video {
+      object-fit: cover;
+      font-family: "object-fit: cover";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .videoToggle {
+      opacity: 1;
+      transition: .2s ease;
+    }
+
+    .content {
+      text-align: center;
+      width: 80%;
+      margin: 100px auto;
+      display: block;
+      z-index: 1;
+    }
+
+    img {
+      width: 250px;
+      transition: .5s ease;
+    }
+
+    a {
+      font-size: 25px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-delay: .5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+ul {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.anim {
+  opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    left: 50%;
+    font-style: italic;
+    transform: translateX(-50%);
+    list-style: none;
+    display: block;
+    color: white;
+    width: 300px;
+    /* transform: translateY(0); */
+}
+
+
+  .highlighted {
+    opacity: 1;
+    transition: .5s ease;
+    /* transform: translateY(-30px); */
+  }
+
+
+  img:hover {
+    transform: translateY(-5px);
+    transition: .5s ease;
+    cursor: pointer;
+  }
