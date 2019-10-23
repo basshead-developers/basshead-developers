@@ -1,10 +1,11 @@
 jQuery(document).ready(function(){
 
+    $('li.anim'+Math.floor((Math.random() * 20) + 1)).addClass('highlighted');
 
     $(function() {
         var lis = $("ul > li.anim"),
-            currentHighlight = 0;
-            N = 8;//interval in seconds
+            currentHighlight = Math.floor((Math.random() * 20) + 1);
+            N = 6; //interval in seconds
         setInterval(function() {
             currentHighlight = (currentHighlight + 1) % lis.length;
             lis.removeClass('highlighted').eq(currentHighlight).addClass('highlighted');
@@ -14,4 +15,5 @@ jQuery(document).ready(function(){
     jQuery('img').hover(function(){
         jQuery('video').toggleClass('videoToggle');
     });
+
 });
